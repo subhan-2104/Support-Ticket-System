@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🎧 SupportDesk
+        </div>
+
+        <nav>
+
+            <a href="index.html" class="active">
+                Dashboard
+            </a>
+
+            <a href="create-ticket.html">
+                Create Ticket
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="topbar">
+
+            <h1>
+                Customer Support Dashboard
+            </h1>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="card stat-card">
+                <p>Total Tickets</p>
+                <h2 id="totalCount">0</h2>
+            </div>
+
+            <div class="card stat-card">
+                <p>Open</p>
+                <h2 id="openCount">0</h2>
+            </div>
+
+            <div class="card stat-card">
+                <p>In Progress</p>
+                <h2 id="progressCount">0</h2>
+            </div>
+
+            <div class="card stat-card">
+                <p>Closed</p>
+                <h2 id="closedCount">0</h2>
+            </div>
+
+        </div>
+
+        <div class="toolbar">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search tickets..."
+            >
+
+            <select id="statusFilter">
+                <option value="">All Status</option>
+                <option value="Open">Open</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Closed">Closed</option>
+            </select>
+
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Subject</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="ticketTable"></tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<div id="toast"></div>
+<script src="js/app.js"></script>
+
+</body>
+</html>

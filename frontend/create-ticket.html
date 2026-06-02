@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Ticket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🎧 SupportDesk
+        </div>
+
+        <nav>
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="create-ticket.html" class="active">
+                Create Ticket
+            </a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="topbar">
+            <h1>Create New Support Ticket</h1>
+            <p class="page-subtitle">
+                Submit a new customer issue for support assistance.
+            </p>
+        </div>
+
+        <div class="ticket-form-card">
+
+            <form id="ticketForm">
+
+                <div class="form-group">
+                    <label>Customer Name</label>
+                    <input
+                        type="text"
+                        id="customerName"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Customer Email</label>
+                    <input
+                        type="email"
+                        id="customerEmail"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Issue Subject</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea
+                        id="description"
+                        rows="6"
+                        required></textarea>
+                </div>
+
+                <div class="button-row">
+
+                    <button
+                        type="submit"
+                        class="primary-btn">
+                        Create Ticket
+                    </button>
+
+                    <a
+                        href="index.html"
+                        class="secondary-btn">
+                        Back
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    </main>
+
+</div>
+<script src="js/create-ticket.js"></script>
+</body>
+</html>
