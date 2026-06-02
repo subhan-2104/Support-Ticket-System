@@ -35,7 +35,7 @@ def get_db():
 @app.get("/")
 def home():
     return {
-        "message": "Support Ticket System API is running successfully"
+        "message": "Support Ticket System API is running successfully v2"
     }
         
 @app.post("/api/tickets")
