@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000/api/tickets";
+const API_URL = "https://support-ticket-system-production-45dd.up.railway.app/api/tickets";
 
 loadTickets();
 
