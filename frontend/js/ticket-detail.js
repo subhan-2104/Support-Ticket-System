@@ -1,4 +1,4 @@
-const API_URL = "support-ticket-system-production-45dd.up.railway.app/api/tickets";
+const API_URL = "https://support-ticket-system-production-45dd.up.railway.app/api/tickets";
 
 const params =
     new URLSearchParams(window.location.search);
