@@ -32,6 +32,12 @@ def get_db():
     finally:
         db.close()
         
+@app.get("/")
+def home():
+    return {
+        "message": "Support Ticket System API is running successfully"
+    }
+        
 @app.post("/api/tickets")
 def create_ticket(ticket: schemas.TicketCreate):
 
